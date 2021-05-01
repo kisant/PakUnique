@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_play">
+
+    <TextView
+        android:layout_width="196dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/rubik_one"
+        android:text="30 SECOND GAME!"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/font_size_large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_simple_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik_one"
+        android:text="SCORE:"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/font_size_large"
+        app:layout_constraintBottom_toTopOf="@+id/tv_score"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik_one"
+        android:text="132"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/font_size_large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_time_left"
+        android:layout_width="170dp"
+        android:layout_height="90dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/time_left"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/iv_score"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+
+    <TextView
+        android:id="@+id/tv_time_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/rubik_one"
+        android:text="21 sec"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/font_size_medium"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_time_left"
+        app:layout_constraintEnd_toEndOf="@+id/iv_time_left"
+        app:layout_constraintStart_toStartOf="@+id/iv_time_left"
+        app:layout_constraintTop_toTopOf="@+id/iv_time_left" />
+
+    <ImageView
+        android:id="@+id/iv_score"
+        android:layout_width="170dp"
+        android:layout_height="90dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/coin_score"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_time_left"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <TextView
+        android:id="@+id/tv_coins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/rubik_one"
+        android:text="122"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/font_size_medium"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_score"
+        app:layout_constraintEnd_toEndOf="@+id/iv_score"
+        app:layout_constraintStart_toStartOf="@+id/iv_score"
+        app:layout_constraintTop_toTopOf="@+id/iv_score" />
+
+    <Button
+        android:id="@+id/b11"
+        android:layout_width="@dimen/coin_play"
+        android:layout_height="@dimen/coin_play"
+        android:background="@drawable/coin_play"
+        android:fontFamily="@font/rubik_one"
+        android:text="1"
+        android:textSize="@dimen/font_size_small"
+        app:layout_constraintEnd_toStartOf="@+id/b12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <Button
+        android:id="@+id/b12"
+        android:layout_width="@dimen/coin_play"
+        android:layout_height="@dimen/coin_play"
+        android:background="@drawable/coin_play"
+        android:fontFamily="@font/rubik_one"
+        android:text="2"
+        android:textSize="@dimen/font_size_small"
+        app:layout_constraintEnd_toStartOf="@+id/b13"
+        app:layout_constraintStart_toEndOf="@+id/b11"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <Button
+        android:id="@+id/b13"
+        android:layout_width="@dimen/coin_play"
+        android:layout_height="@dimen/coin_play"
+        android:background="@drawable/coin_play"
+        android:fontFamily="@font/rubik_one"
+        android:text="3"
+        android:textSize="@dimen/font_size_small"
+        app:layout_constraintEnd_toStartOf="@+id/b14"
+        app:layout_constraintStart_toEndOf="@+id/b12"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <Button
+        android:id="@+id/b14"
+        android:layout_width="@dimen/coin_play"
+        android:layout_height="@dimen/coin_play"
+        android:background="@drawable/coin_play"
+        android:fontFamily="@font/rubik_one"
+        android:text="4"
+        android:textSize="@dimen/font_size_small"
+        app:layout_constraintEnd_toStartOf="@+id/b15"
+        app:layout_constraintStart_toEndOf="@+id/b13"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <Button
+        android:id="@+id/b15"
+        android:layout_width="@dimen/coin_play"
+        android:layout_height="@dimen/coin_play"
+        android:background="@drawable/coin_play"
+        android:fontFamily="@font/rubik_one"
+        android:text="5"
+        android:textSize="@dimen/font_size_small"
+        app:layout_constraintEnd_toStartOf="@+id/b16"
+        app:layout_constraintStart_toEndOf="@+id/b14"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <Button
+        android:id="@+id/b16"
+        android:layout_width="@dimen/coin_play"
+        android:layout_height="@dimen/coin_play"
+        android:background="@drawable/coin_play"
+        android:fontFamily="@font/rubik_one"
+        android:text="6"
+        android:textSize="@dimen/font_size_small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/b15"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <Button
+        android:id="@+id/b21"
+        android:layout_width="@dimen/coin_play"
+        android:layout_height="@dimen/coin_play"
+        android:layout_marginTop="@dimen/margin_coin_play"
+        android:background="@drawable/coin_play"
+        android:fontFamily="@font/rubik_one"
+        android:text="7"
+        android:textSize="@dimen/font_size_small"
+        app:layout_constraintEnd_toStartOf="@+id/b22"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b11" />
+
+    <Button
+        android:id="@+id/b22"
+        android:layout_width="@dimen/coin_play"
+        android:layout_height="@dimen/coin_play"
+        android:layout_marginTop="@dimen/margin_coin_play"
+        android:background="@drawable/coin_play"
+        android:fontFamily="@font/rubik_one"
+        android:text="8"
+        android:textSize="@dimen/font_size_small"
+        app:layout_constraintEnd_toStartOf="@+id/b23"
+        app:layout_constraintStart_toEndOf="@+id/b21"
+        app:layout_constraintTop_toBottomOf="@+id/b11" />
+
+    <Button
+        android:id="@+id/b23"
+        android:layout_width="@dimen/coin_play"
+        android:layout_height="@dimen/coin_play"
+        android:layout_marginTop="@dimen/margin_coin_play"
+        android:background="@drawable/coin_play"
+        android:fontFamily="@font/rubik_one"
+        android:text="9"
+        android:textSize="@dimen/font_size_small"
+        app:layout_constraintEnd_toStartOf="@+id/b24"
+        app:layout_constraintStart_toEndOf="@+id/b22"
+        app:layout_constraintTop_toBottomOf="@+id/b11" />
+
+    <Button
+        android:id="@+id/b24"
+        android:layout_width="@dimen/coin_play"
+        android:layout_height="@dimen/coin_play"
+        android:layout_marginTop="@dimen/margin_coin_play"
+        android:background="@drawable/coin_play"
+        android:fontFamily="@font/rubik_one"
+        android:text="10"
+        android:textSize="@dimen/font_size_small"
+        app:layout_constraintEnd_toStartOf="@+id/b25"
+        app:layout_constraintStart_toEndOf="@+id/b23"
+        app:layout_constraintTop_toBottomOf="@+id/b11" />
+
+    <Button
+        android:id="@+id/b25"
+        android:layout_width="@dimen/coin_play"
+        android:layout_height="@dimen/coin_play"
+        android:layout_marginTop="@dimen/margin_coin_play"
+        android:background="@drawable/coin_play"
+        android:fontFamily="@font/rubik_one"
+        android:text="11"
+        android:textSize="@dimen/font_size_small"
+        app:layout_constraintEnd_toStartOf="@+id/b26"
+        app:layout_constraintStart_toEndOf="@+id/b24"
+        app:layout_constraintTop_toBottomOf="@+id/b11" />
+
+    <Button
+        android:id="@+id/b26"
+        android:layout_width="@dimen/coin_play"
+        android:layout_height="@dimen/coin_play"
+        android:layout_marginTop="@dimen/margin_coin_play"
+        android:background="@drawable/coin_play"
+        android:fontFamily="@font/rubik_one"
+        android:text="12"
+        android:textSize="@dimen/font_size_small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/b25"
+        app:layout_constraintTop_toBottomOf="@+id/b11" />
+
+    <Button
+        android:id="@+id/b31"
+        android:layout_width="@dimen/coin_play"
+        android:layout_height="@dimen/coin_play"
+        android:layout_marginTop="@dimen/margin_coin_play"
+        android:background="@drawable/coin_play"
+        android:fontFamily="@font/rubik_one"
+        android:text="13"
+        android:textSize="@dimen/font_size_small"
+        app:layout_constraintEnd_toStartOf="@+id/b32"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b21" />
+
+    <Button
+        android:id="@+id/b32"
+        android:layout_width="@dimen/coin_play"
+        android:layout_height="@dimen/coin_play"
+        android:layout_marginTop="@dimen/margin_coin_play"
+        android:background="@drawable/coin_play"
+        android:fontFamily="@font/rubik_one"
+        android:text="14"
+        android:textSize="@dimen/font_size_small"
+        app:layout_constraintEnd_toStartOf="@+id/b33"
+        app:layout_constraintStart_toEndOf="@+id/b31"
+        app:layout_constraintTop_toBottomOf="@+id/b21" />
+
+    <Button
+        android:id="@+id/b33"
+        android:layout_width="@dimen/coin_play"
+        android:layout_height="@dimen/coin_play"
+        android:layout_marginTop="@dimen/margin_coin_play"
+        android:background="@drawable/coin_play"
+        android:fontFamily="@font/rubik_one"
+        android:text="15"
+        android:textSize="@dimen/font_size_small"
+        app:layout_constraintEnd_toStartOf="@+id/b34"
+        app:layout_constraintStart_toEndOf="@+id/b32"
+        app:layout_constraintTop_toBottomOf="@+id/b21" />
+
+    <Button
+        android:id="@+id/b34"
+        android:layout_width="@dimen/coin_play"
+        android:layout_height="@dimen/coin_play"
+        android:layout_marginTop="@dimen/margin_coin_play"
+        android:background="@drawable/coin_play"
+        android:fontFamily="@font/rubik_one"
+        android:text="16"
+        android:textSize="@dimen/font_size_small"
+        app:layout_constraintEnd_toStartOf="@+id/b35"
+        app:layout_constraintStart_toEndOf="@+id/b33"
+        app:layout_constraintTop_toBottomOf="@+id/b21" />
+
+    <Button
+        android:id="@+id/b35"
+        android:layout_width="@dimen/coin_play"
+        android:layout_height="@dimen/coin_play"
+        android:layout_marginTop="@dimen/margin_coin_play"
+        android:background="@drawable/coin_play"
+        android:fontFamily="@font/rubik_one"
+        android:text="17"
+        android:textSize="@dimen/font_size_small"
+        app:layout_constraintEnd_toStartOf="@+id/b36"
+        app:layout_constraintStart_toEndOf="@+id/b34"
+        app:layout_constraintTop_toBottomOf="@+id/b21" />
+
+    <Button
+        android:id="@+id/b36"
+        android:layout_width="@dimen/coin_play"
+        android:layout_height="@dimen/coin_play"
+        android:layout_marginTop="@dimen/margin_coin_play"
+        android:background="@drawable/coin_play"
+        android:fontFamily="@font/rubik_one"
+        android:text="18"
+        android:textSize="@dimen/font_size_small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/b35"
+        app:layout_constraintTop_toBottomOf="@+id/b21" />
+
+    <Button
+        android:id="@+id/b41"
+        android:layout_width="@dimen/coin_play"
+        android:layout_height="@dimen/coin_play"
+        android:layout_marginTop="@dimen/margin_coin_play"
+        android:background="@drawable/coin_play"
+        android:fontFamily="@font/rubik_one"
+        android:text="19"
+        android:textSize="@dimen/font_size_small"
+        app:layout_constraintEnd_toStartOf="@+id/b42"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b31" />
+
+    <Button
+        android:id="@+id/b42"
+        android:layout_width="@dimen/coin_play"
+        android:layout_height="@dimen/coin_play"
+        android:layout_marginTop="@dimen/margin_coin_play"
+        android:background="@drawable/coin_play"
+        android:fontFamily="@font/rubik_one"
+        android:text="20"
+        android:textSize="@dimen/font_size_small"
+        app:layout_constraintEnd_toStartOf="@+id/b43"
+        app:layout_constraintStart_toEndOf="@+id/b41"
+        app:layout_constraintTop_toBottomOf="@+id/b31" />
+
+    <Button
+        android:id="@+id/b43"
+        android:layout_width="@dimen/coin_play"
+        android:layout_height="@dimen/coin_play"
+        android:layout_marginTop="@dimen/margin_coin_play"
+        android:background="@drawable/coin_play"
+        android:fontFamily="@font/rubik_one"
+        android:text="21"
+        android:textSize="@dimen/font_size_small"
+        app:layout_constraintEnd_toStartOf="@+id/b44"
+        app:layout_constraintStart_toEndOf="@+id/b42"
+        app:layout_constraintTop_toBottomOf="@+id/b31" />
+
+    <Button
+        android:id="@+id/b44"
+        android:layout_width="@dimen/coin_play"
+        android:layout_height="@dimen/coin_play"
+        android:layout_marginTop="@dimen/margin_coin_play"
+        android:background="@drawable/coin_play"
+        android:fontFamily="@font/rubik_one"
+        android:text="22"
+        android:textSize="@dimen/font_size_small"
+        app:layout_constraintEnd_toStartOf="@+id/b45"
+        app:layout_constraintStart_toEndOf="@+id/b43"
+        app:layout_constraintTop_toBottomOf="@+id/b31" />
+
+    <Button
+        android:id="@+id/b45"
+        android:layout_width="@dimen/coin_play"
+        android:layout_height="@dimen/coin_play"
+        android:layout_marginTop="@dimen/margin_coin_play"
+        android:background="@drawable/coin_play"
+        android:fontFamily="@font/rubik_one"
+        android:text="23"
+        android:textSize="@dimen/font_size_small"
+        app:layout_constraintEnd_toStartOf="@+id/b46"
+        app:layout_constraintStart_toEndOf="@+id/b44"
+        app:layout_constraintTop_toBottomOf="@+id/b31" />
+
+    <Button
+        android:id="@+id/b46"
+        android:layout_width="@dimen/coin_play"
+        android:layout_height="@dimen/coin_play"
+        android:layout_marginTop="@dimen/margin_coin_play"
+        android:background="@drawable/coin_play"
+        android:fontFamily="@font/rubik_one"
+        android:text="24"
+        android:textSize="@dimen/font_size_small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/b45"
+        app:layout_constraintTop_toBottomOf="@+id/b31" />
+
+    <Button
+        android:id="@+id/b51"
+        android:layout_width="@dimen/coin_play"
+        android:layout_height="@dimen/coin_play"
+        android:layout_marginTop="@dimen/margin_coin_play"
+        android:background="@drawable/coin_play"
+        android:fontFamily="@font/rubik_one"
+        android:text="25"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toStartOf="@+id/b52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b41" />
+
+    <Button
+        android:id="@+id/b52"
+        android:layout_width="@dimen/coin_play"
+        android:layout_height="@dimen/coin_play"
+        android:layout_marginTop="@dimen/margin_coin_play"
+        android:background="@drawable/coin_play"
+        android:fontFamily="@font/rubik_one"
+        android:text="26"
+        android:textSize="@dimen/font_size_small"
+        app:layout_constraintEnd_toStartOf="@+id/b53"
+        app:layout_constraintStart_toEndOf="@+id/b51"
+        app:layout_constraintTop_toBottomOf="@+id/b41" />
+
+    <Button
+        android:id="@+id/b53"
+        android:layout_width="@dimen/coin_play"
+        android:layout_height="@dimen/coin_play"
+        android:layout_marginTop="@dimen/margin_coin_play"
+        android:background="@drawable/coin_play"
+        android:fontFamily="@font/rubik_one"
+        android:text="27"
+        android:textSize="@dimen/font_size_small"
+        app:layout_constraintEnd_toStartOf="@+id/b54"
+        app:layout_constraintStart_toEndOf="@+id/b52"
+        app:layout_constraintTop_toBottomOf="@+id/b41" />
+
+    <Button
+        android:id="@+id/b54"
+        android:layout_width="@dimen/coin_play"
+        android:layout_height="@dimen/coin_play"
+        android:layout_marginTop="@dimen/margin_coin_play"
+        android:background="@drawable/coin_play"
+        android:fontFamily="@font/rubik_one"
+        android:text="28"
+        android:textSize="@dimen/font_size_small"
+        app:layout_constraintEnd_toStartOf="@+id/b55"
+        app:layout_constraintStart_toEndOf="@+id/b53"
+        app:layout_constraintTop_toBottomOf="@+id/b41" />
+
+    <Button
+        android:id="@+id/b55"
+        android:layout_width="@dimen/coin_play"
+        android:layout_height="@dimen/coin_play"
+        android:layout_marginTop="@dimen/margin_coin_play"
+        android:background="@drawable/coin_play"
+        android:fontFamily="@font/rubik_one"
+        android:text="29"
+        android:textSize="@dimen/font_size_small"
+        app:layout_constraintEnd_toStartOf="@+id/b56"
+        app:layout_constraintStart_toEndOf="@+id/b54"
+        app:layout_constraintTop_toBottomOf="@+id/b41" />
+
+    <Button
+        android:id="@+id/b56"
+        android:layout_width="@dimen/coin_play"
+        android:layout_height="@dimen/coin_play"
+        android:layout_marginTop="@dimen/margin_coin_play"
+        android:background="@drawable/coin_play"
+        android:fontFamily="@font/rubik_one"
+        android:text="30"
+        android:textSize="@dimen/font_size_small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/b55"
+        app:layout_constraintTop_toBottomOf="@+id/b41" />
+
+    <Button
+        android:id="@+id/b61"
+        android:layout_width="@dimen/coin_play"
+        android:layout_height="@dimen/coin_play"
+        android:layout_marginTop="@dimen/margin_coin_play"
+        android:background="@drawable/coin_play"
+        android:fontFamily="@font/rubik_one"
+        android:text="31"
+        android:textSize="@dimen/font_size_small"
+        app:layout_constraintEnd_toStartOf="@+id/b62"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b51" />
+
+    <Button
+        android:id="@+id/b62"
+        android:layout_width="@dimen/coin_play"
+        android:layout_height="@dimen/coin_play"
+        android:layout_marginTop="@dimen/margin_coin_play"
+        android:background="@drawable/coin_play"
+        android:fontFamily="@font/rubik_one"
+        android:text="32"
+        android:textSize="@dimen/font_size_small"
+        app:layout_constraintEnd_toStartOf="@+id/b63"
+        app:layout_constraintStart_toEndOf="@+id/b61"
+        app:layout_constraintTop_toBottomOf="@+id/b51" />
+
+    <Button
+        android:id="@+id/b63"
+        android:layout_width="@dimen/coin_play"
+        android:layout_height="@dimen/coin_play"
+        android:layout_marginTop="@dimen/margin_coin_play"
+        android:background="@drawable/coin_play"
+        android:fontFamily="@font/rubik_one"
+        android:text="33"
+        android:textSize="@dimen/font_size_small"
+        app:layout_constraintEnd_toStartOf="@+id/b64"
+        app:layout_constraintStart_toEndOf="@+id/b62"
+        app:layout_constraintTop_toBottomOf="@+id/b51" />
+
+    <Button
+        android:id="@+id/b64"
+        android:layout_width="@dimen/coin_play"
+        android:layout_height="@dimen/coin_play"
+        android:layout_marginTop="@dimen/margin_coin_play"
+        android:background="@drawable/coin_play"
+        android:fontFamily="@font/rubik_one"
+        android:text="34"
+        android:textSize="@dimen/font_size_small"
+        app:layout_constraintEnd_toStartOf="@+id/b65"
+        app:layout_constraintStart_toEndOf="@+id/b63"
+        app:layout_constraintTop_toBottomOf="@+id/b51" />
+
+    <Button
+        android:id="@+id/b65"
+        android:layout_width="@dimen/coin_play"
+        android:layout_height="@dimen/coin_play"
+        android:layout_marginTop="@dimen/margin_coin_play"
+        android:background="@drawable/coin_play"
+        android:fontFamily="@font/rubik_one"
+        android:text="35"
+        android:textSize="@dimen/font_size_small"
+        app:layout_constraintEnd_toStartOf="@+id/b66"
+        app:layout_constraintStart_toEndOf="@+id/b64"
+        app:layout_constraintTop_toBottomOf="@+id/b51" />
+
+    <Button
+        android:id="@+id/b66"
+        android:layout_width="@dimen/coin_play"
+        android:layout_height="@dimen/coin_play"
+        android:layout_marginTop="@dimen/margin_coin_play"
+        android:background="@drawable/coin_play"
+        android:fontFamily="@font/rubik_one"
+        android:text="36"
+        android:textSize="@dimen/font_size_small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/b65"
+        app:layout_constraintTop_toBottomOf="@+id/b51" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.166" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

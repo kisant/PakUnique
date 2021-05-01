@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="coin_play">50dp</dimen>
+    <dimen name="margin_coin_play">10dp</dimen>
+
+    <dimen name="font_size_rules">16sp</dimen>
+    <dimen name="font_size_small">19sp</dimen>
+    <dimen name="font_size_medium">21sp</dimen>
+    <dimen name="font_size_large">30sp</dimen>
+
+    <dimen name="button_big_w">190dp</dimen>
+    <dimen name="button_big_h">85dp</dimen>
+    <dimen name="button_small_w">50dp</dimen>
+    <dimen name="button_small_h">50dp</dimen>
+    <dimen name="button_medium_w">75dp</dimen>
+    <dimen name="button_medium_h">75dp</dimen>
+</resources>

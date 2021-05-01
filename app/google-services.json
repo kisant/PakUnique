@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1027417063492",
+    "project_id": "pak-unique-f9b0e",
+    "storage_bucket": "pak-unique-f9b0e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1027417063492:android:120f39be2b735096e27c11",
+        "android_client_info": {
+          "package_name": "com.unique.pak"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1027417063492-c1035p04096jntfut74bdhh4p1nn0gmr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAt0_E_t3bKo2TqRb_hNWt-XnJeYG1BmxQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1027417063492-c1035p04096jntfut74bdhh4p1nn0gmr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

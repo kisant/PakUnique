@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main_menu">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik_one"
+        android:text="SETTING"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/font_size_large"
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_sound"
+        android:layout_width="@dimen/button_big_w"
+        android:layout_height="@dimen/button_big_h"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline7"
+        app:srcCompat="@drawable/sound" />
+
+    <ImageView
+        android:id="@+id/iv_vibro"
+        android:layout_width="@dimen/button_big_w"
+        android:layout_height="@dimen/button_big_h"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_sound_sttng"
+        app:srcCompat="@drawable/vibro" />
+
+    <ImageView
+        android:id="@+id/iv_sound_sttng"
+        android:layout_width="@dimen/button_medium_w"
+        android:layout_height="@dimen/button_medium_h"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_sound"
+        app:srcCompat="@drawable/red" />
+
+    <ImageView
+        android:id="@+id/iv_vibro_sttng"
+        android:layout_width="@dimen/button_medium_w"
+        android:layout_height="@dimen/button_medium_h"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_vibro"
+        app:srcCompat="@drawable/green" />
+
+    <ImageView
+        android:id="@+id/iv_close_sttng"
+        android:layout_width="@dimen/button_small_w"
+        android:layout_height="@dimen/button_small_h"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline6"
+        app:srcCompat="@drawable/close" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.89" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.11" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
